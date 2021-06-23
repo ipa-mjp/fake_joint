@@ -1,0 +1,111 @@
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+
+## joint trajectory controller
+joint_trajectory_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - arm_1_joint
+    - arm_2_joint
+    - arm_3_joint
+    - arm_4_joint
+    - arm_5_joint
+    - arm_6_joint
+    - arm_7_joint
+
+arm_1_joint_position_controller:
+  type: position_controllers/JointPositionController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_1_joint
+
+arm_2_joint_position_controller:
+  type: position_controllers/JointPositionController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_2_joint
+
+arm_3_joint_position_controller:
+  type: position_controllers/JointPositionController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_3_joint
+
+arm_4_joint_position_controller:
+  type: position_controllers/JointPositionController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_4_joint
+
+arm_5_joint_position_controller:
+  type: position_controllers/JointPositionController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_5_joint
+
+arm_6_joint_position_controller:
+  type: position_controllers/JointPositionController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_6_joint
+
+arm_7_joint_position_controller:
+  type: position_controllers/JointPositionController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_7_joint
+
+## velocity controller
+joint_group_velocity_controller:
+  type: velocity_controllers/JointGroupVelocityController
+  joints:
+    - arm_1_joint
+    - arm_2_joint
+    - arm_3_joint
+    - arm_4_joint
+    - arm_5_joint
+    - arm_6_joint
+    - arm_7_joint
+
+arm_1_joint_velocity_controller:
+  type: velocity_controllers/JointVelocityController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_1_joint
+
+arm_2_joint_velocity_controller:
+  type: velocity_controllers/JointVelocityController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_2_joint
+
+arm_3_joint_velocity_controller:
+  type: velocity_controllers/JointVelocityController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_3_joint
+
+arm_4_joint_velocity_controller:
+  type: velocity_controllers/JointVelocityController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_4_joint
+
+arm_5_joint_velocity_controllerr:
+  type: velocity_controllers/JointVelocityController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_5_joint
+
+arm_6_joint_velocity_controller:
+  type: velocity_controllers/JointVelocityController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_6_joint
+
+arm_7_joint_velocity_controller:
+  type: velocity_controllers/JointVelocityController
+  publish_rate: 50
+  base_frame_id: world
+  joint : arm_7_joint
